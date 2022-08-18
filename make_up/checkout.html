@@ -1,0 +1,385 @@
+      <!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+        <link rel="stylesheet" href="style.css">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <title>Validation using Bootstrap</title>
+    </head>
+    <body>
+
+<h1 class="text-center pt-5">JUST BEAUTY</h1>
+<h3 class="text-center">SECURE CHECKOUT</h3>
+
+<div class="container-fluid pt-5">
+
+	<div class="row">
+		<div class="col-lg-12"> 
+			<div class="row">
+		<div class="col-lg-2"></div>
+
+		<div class="col-lg-5 col-12">
+			<h5 class="text-center text-danger">*To Checkout One Must Fill Up These Form*</h5>
+			<div id="accordion">
+  <div class="card">
+    <div class="card-header bg-dark" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-dark" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          1.SIGN IN/REGISTER
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+       <h5 class="modal-title" id="exampleModalLabel">SIGN IN</h5> 
+       <h5 class="text-center text-danger">*If Already Loged In Then Press Skip*  </h5>
+            <form>
+              <div class="form-group">
+                <label >Email address</label>
+                <input type="text" name="email"  class="form-control" id="email"  placeholder="Enter email">
+                <div class="invalid-feedback">
+                    Incorrect email format.
+                </div>
+                <div class="valid-feedback">
+                    Correct format.
+                </div>
+                
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Password</label>
+                <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password" >
+                
+              </div>
+            
+            
+
+
+        <button type="button" class="btn btn-success" data-dismiss="modal">Skip</button>
+            <button type="button" class="btn btn-primary">Log In</button>
+</form>
+
+            <h5 class="text-center text-danger">*New In Just Beauty?*</h5>
+            <div class="text-center">
+            <a href="#" class="btn btn-info float-middle" data-toggle="modal" data-target="#exampleModal2">Register Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header bg-dark" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-dark collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          2.SHIPPING ADDRESS
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        
+      <form id="form"  method="GET">       
+        <div class="form-group">
+           <label for="exampleFormControlInput1"></label>
+           <div class="input-group mb-3">
+           <input type="text" class="form-control" placeholder="First Name*" aria-label="...  " id="fnam2" aria-describedby="basic-addon2" required>
+ 
+              </div>
+                  </div>
+             
+                  <div class="form-group">
+           <label for="exampleFormControlInput1"></label>
+           <div class="input-group mb-3">
+           <input type="text" class="form-control" placeholder="Last Name*" id="lnam" aria-label="..." aria-describedby="basic-addon2" required>
+ 
+              </div>
+                  </div>
+                  <div class="form-group">
+           <label for="exampleFormControlInput1"></label>
+           <div class="input-group mb-3">
+           <input type="text" class="form-control" placeholder="Address*" id="add" aria-label="..." aria-describedby="basic-addon2" required>
+ 
+              </div>
+                  </div>
+                  <div class="form-group">
+           <label for="exampleFormControlInput1"></label>
+           <div class="input-group mb-3">
+           <input type="text" class="form-control" id="num" placeholder="Contact Number*" aria-label="..." aria-describedby="basic-addon2" required>
+ 
+              </div>
+                  </div>
+            
+
+            
+            <button type="submit" class="btn btn-danger">SAVE AND CONTINUE</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="card"> 
+    <div class="card-header bg-dark" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-dark collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          3.PAYMENT METHODS
+        </button>
+      </h5>
+    </div>
+    <form>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        <div class="form-check-inline"> 
+                           <input class="form-check-input" type="radio" name="name" id="id"
+                           value="option1" checked>
+                           <label class="form-check-label" for="id">
+                             <img src="disco.png" class="img-fluid img-thumbnail" alt="...">
+                           </label>
+                         </div>
+                         <div class="form-check-inline">
+                           <input class="form-check-input" type="radio" name="name" id="id"
+                           value="option1" checked>
+                           <label class="form-check-label" for="id">
+                             <img src="visa.png" class="img-fluid img-thumbnail" alt="...">
+                           </label>
+                         </div>
+                         <div class=" form-check-inline">
+                           <input class="form-check-input" type="radio" name="name" id="id"
+                           value="option1" checked>
+                           <label class="form-check-label" for="id">
+                            <img src="master.png" class="img-fluid img-thumbnail" alt="...">
+                           </label>
+
+                         </div>
+                         <div class="form-check-inline">
+                           <input class="form-check-input" type="radio" name="name" id="id"
+                           value="option1" checked>
+                           <label class="form-check-label" for="id">
+                             <img src="amex.png" class="img-fluid img-thumbnail" alt="...">
+                           </label>
+                         </div>
+<input type="text"  id="card"  class="form-control" aria-describedby="emailHelp" placeholder="Enter card Number" >
+<input type="text" id="card2"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Card Expiry" >
+<input type="text" id="card2"  class="form-control" aria-describedby="emailHelp" placeholder="Enter CVV" >
+                         
+            <button type="button" class="btn btn-primary">SAVE</button>
+      </div>
+    </div>
+</form>
+  </div>
+</div>
+
+
+</div>
+      <div class="col-lg-5 col-12">
+      	<div class="card shadow-lg border-light mb-3" style="max-width: 18rem;">
+  <div class="card-header bg-transparent border-dark"><h5>PROCEED TO CHECKOUT</h5></div>
+  <div class="card-body">
+    <table class="table">
+    <tbody>
+        <tr>
+          <th>Subtotal</th>
+            <td>$165.00</td>
+            
+        </tr>
+        <tr>
+          <th>Price Before GST</th>
+            <td>$150.00</td>
+            
+        </tr>
+        <tr>
+          <th>GST(10% included)</th>
+            <td>$15.00</td>
+            
+        </tr>
+        <tr>
+          <th><h3>TOTAL</h3></th>
+            <td><h3>$165</h3></td>
+            
+        </tr>
+      </tbody>
+      </table>
+  </div>
+  
+<a href="checkout.html" class="btn btn-danger">PLACE ORDER</a>
+  
+  <div class="card-footer bg-transparent border-dark">
+   <p>Please note that orders may not be changed or cancelled once processed.</p>
+
+
+</div>
+  <a href="justbeauty.html" class="btn btn-info " role="button float-right">Home</a>
+</div>
+
+
+
+
+      </div>
+		</div>
+	</div>
+</div>
+
+
+
+</div>
+
+
+<!--modals-->
+
+
+ <div class="container-fluid">
+
+  
+    <div class="modal fade" id="exampleModal2" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Registration</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid" style="height:70vh;">
+                    <div class="container">
+    <div class="col-lg-12 well">
+    <div class="row">
+                <form>
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-6 form-group">
+                                <label>First Name</label>
+                                <input type="text" placeholder="First Name" class="form-control">
+                            </div>
+                            <div class="col-lg-6 form-group">
+                                <label>Last Name</label>
+                                <input type="text" placeholder="Last Name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 form-group">
+   <label>Email</label>
+     <input type="text" class="form-control" id="email2"  placeholder="Enter email">
+     <div class="invalid-feedback">
+       Incorrect email format.
+        </div>
+         <div class="valid-feedback">
+                               Correct format.
+                                 </div>
+                            </div>
+          <div class="col-lg-6 form-group">
+   <label>Phone</label>
+     <input type="text" class="form-control" id="phone"  placeholder="Enter phone" >
+     <div class="invalid-feedback">
+       Incorrect Phone Number.
+        </div>
+         <div class="valid-feedback">
+                               Correct Phone Number.
+                                 </div>
+                            </div>
+                        </div>                   
+                          
+                        <div class="row">
+                            <div class="col-lg-4 control-lable">
+                                <label>Country</label>
+
+                            <select class="form-control">
+                              <option>Choose</option>
+                              <option>Bangladesh</option>
+                              <option>Cambodia</option>
+                              <option>Denmark</option>
+                              <option>Ecuador</option>
+                              <option>Fiji</option>
+                              <option>Gabon</option>
+                              <option>Haiti</option>
+                            </select>
+                            
+                          </div>
+                          <div class="col-lg-4 form-group">
+                            <label>City</label>
+                            <input type="text" placeholder="city" class="form-control">
+                          </div>  
+                          <div class="col-lg-4 form-group">
+                            <label>Zip Code</label>
+                            <input type="text" placeholder=" " class="form-control">
+                          </div>      
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-6 form-group">
+                            <label>Password</label>
+                            <input type="text" placeholder="  " class="form-control" id="pass" onkeyup="passvalidate();">
+                            <span id="length">Min 8 Character</span>
+            |<span id="capital">One Capital Letter</span>|<span id="small">One Small Letter</span>|<span id="special">One Special Character</span><br/>
+                          </div>      
+                          <div class="col-lg-6 form-group">
+                            <label>Confirm Password</label>
+                            <input type="text" placeholder="  " class="form-control" id="repass">
+                          </div>  
+                        </div> 
+
+                        Gender:
+                        <div class="row">
+                         <div class="col-4 form-check"> 
+                           <input class="form-check-input" type="radio" name="name" id="id"
+                           value="option1" checked>
+                           <label class="form-check-label" for="id">
+                             Male
+                           </label>
+                         </div>
+                         <div class="col-4 form-check">
+                           <input class="form-check-input" type="radio" name="name" id="id"
+                           value="option1" checked>
+                           <label class="form-check-label" for="id">
+                             Female
+                           </label>
+                         </div>
+                         <div class="col-4 form-check">
+                           <input class="form-check-input" type="radio" name="name" id="id"
+                           value="option1" checked>
+                           <label class="form-check-label" for="id">
+                             Other
+                           </label>
+
+                         </div>
+
+
+                       </div>
+
+                     </div>
+                   </form> 
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+      <script type="text/javascript" src="style.js">
+
+            
+        </script>
+
+       
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,2215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+        <link rel="stylesheet" href="style.css">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <title>Validation using Bootstrap</title>
+    </head>
+    <body>
+
+      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark navcl fixed-top shadow-lg">
+         
+      <a href="#" class="navbar-brand ">
+         Just Beauty
+      </a>
+  <a href="test.html" class="navbar-brand active ">
+         <i class="fa fa-shopping-bag" style="font-size:36px;"></i>
+         <span class='badge badge-warning' id='lblCartCount'> 3 </span>
+      </a>
+      
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarId" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarId">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="justbeauty.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownId" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Stores And Events
+            </a>
+            <div class="dropdown-menu" aria labelledby = "navbarDropdownId">
+              <a class="dropdown-item" href="#">Discover Store Events</a>
+              <a class="dropdown-item" href="#">Find A Store</a>
+           
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownId" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Book Beauty Services
+            </a>
+            <div class="dropdown-menu" aria labelledby = "navbarDropdownId">
+              <a class="dropdown-item" href="#">All Beauty Services</a>
+              <a class="dropdown-item" href="#">Sephora Makeup Services</a>
+              
+
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" >Contact Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="page2.html" >Admin Page</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 ">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+          
+        </form>
+        
+
+       <button type="button" class="btn btn-outline-light my-2 my-sm-0" data-toggle="modal" data-target="#exampleModal1">
+          Login</button>
+          <button type="button" class="btn btn-outline-light my-2 my-sm-0" data-toggle="modal" data-target="#exampleModal2">
+          Register</button>
+      </div>
+    </nav> 
+  </div>
+        
+<div class="container-fluid">
+
+  
+    <div class="modal fade" id="exampleModal2" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Registration</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid" style="height:70vh;">
+                    <div class="container">
+    <div class="col-lg-12 well">
+    <div class="row">
+                <form>
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-6 form-group">
+                                <label>First Name</label>
+                                <input type="text" placeholder="First Name" class="form-control">
+                            </div>
+                            <div class="col-lg-6 form-group">
+                                <label>Last Name</label>
+                                <input type="text" placeholder="Last Name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 form-group">
+   <label>Email</label>
+     <input type="text" class="form-control" id="email2"  placeholder="Enter email">
+     <div class="invalid-feedback">
+       Incorrect email format.
+        </div>
+         <div class="valid-feedback">
+                               Correct format.
+                                 </div>
+                            </div>
+          <div class="col-lg-6 form-group">
+   <label>Phone</label>
+     <input type="text" class="form-control" id="phone"  placeholder="Enter phone" >
+     <div class="invalid-feedback">
+       Incorrect Phone Number.
+        </div>
+         <div class="valid-feedback">
+                               Correct Phone Number.
+                                 </div>
+                            </div>
+                        </div>                   
+                          
+                        <div class="row">
+                            <div class="col-lg-4 control-lable">
+                                <label>Country</label>
+
+                            <select class="form-control">
+                              <option>Choose</option>
+                              <option>Bangladesh</option>
+                              <option>Cambodia</option>
+                              <option>Denmark</option>
+                              <option>Ecuador</option>
+                              <option>Fiji</option>
+                              <option>Gabon</option>
+                              <option>Haiti</option>
+                            </select>
+                            
+                          </div>
+                          <div class="col-lg-4 form-group">
+                            <label>City</label>
+                            <input type="text" placeholder="city" class="form-control">
+                          </div>  
+                          <div class="col-lg-4 form-group">
+                            <label>Zip Code</label>
+                            <input type="text" placeholder=" " class="form-control">
+                          </div>      
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-6 form-group">
+                            <label>Password</label>
+                            <input type="text" placeholder="  " class="form-control" id="pass" onkeyup="passvalidate();">
+                            <span id="length">Min 8 Character</span>
+            |<span id="capital">One Capital Letter</span>|<span id="small">One Small Letter</span>|<span id="special">One Special Character</span><br/>
+                          </div>      
+                          <div class="col-lg-6 form-group">
+                            <label>Confirm Password</label>
+                            <input type="text" placeholder="  " class="form-control" id="repass">
+                          </div>  
+                        </div> 
+
+                        Gender:
+                        <div class="row">
+                         <div class="col-4 form-check"> 
+                           <input class="form-check-input" type="radio" name="name" id="id"
+                           value="option1" checked>
+                           <label class="form-check-label" for="id">
+                             Male
+                           </label>
+                         </div>
+                         <div class="col-4 form-check">
+                           <input class="form-check-input" type="radio" name="name" id="id"
+                           value="option1" checked>
+                           <label class="form-check-label" for="id">
+                             Female
+                           </label>
+                         </div>
+                         <div class="col-4 form-check">
+                           <input class="form-check-input" type="radio" name="name" id="id"
+                           value="option1" checked>
+                           <label class="form-check-label" for="id">
+                             Other
+                           </label>
+
+                         </div>
+
+
+                       </div>
+
+                     </div>
+                   </form> 
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="container-fluid">
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal1" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login Credentials</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid" style="height:30vh;">
+              <div class="form-group">
+                <label >Email address</label>
+                <input type="text" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" onkeyup="mailvalidate();">
+                <div class="invalid-feedback">
+                    Incorrect email format.
+                </div>
+                <div class="valid-feedback">
+                    Correct format.
+                </div>
+                
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Password</label>
+                <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password" >
+                
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Log In</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="style.js"></script>
+
+  </div>
+        
+        
+
+<div class="container-fluid">
+
+    <!-- Modal--> 
+    <div class="modal fade" id="ANASTASIA" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">ANASTASIA BEVERLY HILLS</h3>
+          
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid" style="height:70vh; ">
+              <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                <img src="anes.png"  alt="..." style="height:16rem;"> 
+               <p style="font-size:30px" class="text-center">Dipbrow Pomade</p>
+               <h5 class=" text-center">$33.00</h5>
+
+                    
+              <p style="font-size:22px">DESCRIPTION</p>
+              <p class="modal-title">Function: Colour</p>
+              <p class="modal-title">Formulation: Cream</p>
+
+              <p style="font-size:22px">INGREDIENTS</p>
+              <p class="modal-title">Product Claims: Fragrance-free, Oil-free, Sulphate-free</p>
+
+             <p style="font-size:22px">Suggested Usage</p>
+              <p class="modal-title">-Outline and fill brows with a small amount of pomade using an angled brow brush.</p>
+              <p class="modal-title">-Blend with a clean spooley brush.</p>
+              <p class="modal-title">-Tighten the cap after each use to prevent drying.</p>
+             
+            
+       
+    </div>
+          </div>
+      </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+            <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+          </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="container-fluid">
+
+    <!-- Modal--> 
+    <div class="modal fade" id="cc" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">IT COSMETICS</h3>
+          
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid" style="height:70vh; ">
+              <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                <img src="cc.png"  alt="..." style="height:18rem;" class="center">  
+               <p style="font-size:30px" class="text-center">Your Skin But Better CC+ Cream SPF 50 Mini</p>
+               <h5 class=" text-center">$25.00</h5>
+
+                    
+              <p style="font-size:22px">DESCRIPTION</p>
+              <p class="modal-title">Skin Type: Combination, Dry, Normal, Oily, Sensitive</p>
+              <p class="modal-title">Finish: Radiant</p>
+              <p class="modal-title">Coverage: Full</p>
+              <p class="modal-title">Formulation: Cream</p>
+
+              <p style="font-size:22px">INGREDIENTS</p>
+              <p class="modal-title">Product Claims: AHAs, Anti-oxidants, BHAs/Salicylic Acid, Fragrance-free, Hyaluronic Acid, Paraben-free, Peptides, Retinoid, Vitamins</p>
+
+             <p style="font-size:22px">Suggested Usage</p>
+              <p class="modal-title">-Apply 1-2 pumps to clean skin using your favourite brush.</p>
+              <p class="modal-title">-Can be used as your foundation, concealer, anti-ageing serum, moisturiser and sunscreen, based on your coverage needs.</p>
+              <p class="modal-title">-For best results, apply a smooth, even layer to your face, neck and decollete for complexion perfection.</p>
+             
+            
+       
+    </div>
+          </div>
+      </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+            <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+          </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container-fluid">
+
+    <!-- Modal--> 
+    <div class="modal fade" id="fb" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">FENTY BEAUTY</h3>
+          
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid" style="height:70vh; ">
+              <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                <img src="fenty lip.png"  alt="..." style="height:18rem;" class="center"> 
+               <p style="font-size:30px" class="text-center">Stunna Lip Paint Longwear Fluid Lip Color</p>
+               <h5 class=" text-center">$39.00</h5>
+
+                    
+              <p style="font-size:22px">DESCRIPTION</p>
+              <p class="modal-title">Formulation: Liquid</p>
+              <p class="modal-title">Benefits: Hydrating</p>
+             
+
+              <p style="font-size:22px">INGREDIENTS</p>
+              <p class="modal-title">Product Claims: AHAs, Anti-oxidants, Oil-free, Paraben-free, Peptides, Sulphate-free, Vitamins
+</p>
+
+             <p style="font-size:22px">Suggested Usage</p>
+              <p class="modal-title">-Wear Gloss Bomb alone or layer over lipstick as the finishing touch to the Fenty Face.</p>
+              <p class="modal-title">-ARTISTRY PRO TIP: Try Gloss Bomb over your fave lip colour to give for super lustrous dimension.</p>
+              
+             
+            
+       
+    </div>
+          </div>
+      </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+            <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+          </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container-fluid">
+
+    <!-- Modal--> 
+    <div class="modal fade" id="hoo" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">BENEFIT COSMETICS</h3>
+          
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid" style="height:70vh; ">
+              <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                <img src="hoo.png"  alt="..." style="height:18rem;" class="center"> 
+               <p style="font-size:30px" class="text-center">Hoola Matte Bronzer</p>
+               <h5 class=" text-center">$54.00</h5>
+
+                    
+              <p style="font-size:22px">DESCRIPTION</p>
+              <p class="modal-title">Formulation: Pressed Powder</p>
+             
+             
+
+              <p style="font-size:22px">INGREDIENTS</p>
+              <p class="modal-title">Product Claims: Fragrance-free.
+</p>
+
+             <p style="font-size:22px">Suggested Usage</p>
+              <p class="modal-title">-Dust onto chin, cheeks and forehead to sculpt and define.</p>
+              <p class="modal-title">-Starting under cheekbones, use circular motions to blend upwards onto the cheeks.</p>
+              
+             
+            
+       
+    </div>
+          </div>
+      </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+            <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+          </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container-fluid">
+
+    <!-- Modal--> 
+    <div class="modal fade" id="huda" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">HUDA BEAUTY</h3>
+          
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid" style="height:70vh; ">
+              <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                <img src="huda.png"  alt="..." style="height:18rem;" class="center">  
+               <p style="font-size:30px" class="text-center">Power Bullet Matte Lipstick • 3g</p>
+               <h5 class=" text-center">$38.00</h5>
+
+                    
+              <p style="font-size:22px">DESCRIPTION</p>
+              <p class="modal-title">Finish: Matte</p>
+              <p class="modal-title">Formulation: Stick</p>
+              <p class="modal-title">Benefits: Hydrating</p>
+             
+             
+
+              <p style="font-size:22px">INGREDIENTS</p>
+              <p class="modal-title">Product Claims: Anti-oxidants, Fragrance-free, Oil-free, Paraben-free, Sulphate-free, Vitamins.
+</p>
+
+             <p style="font-size:22px">Suggested Usage</p>
+              <p class="modal-title">-Use the bullet’s pointed tip to contour and line the edges of your lips.</p>
+              <p class="modal-title">-Fill the lips using the bullet’s flat base, beginning in the centre and smoothing outwards to the corners of your mouth.</p>
+              
+             
+            
+       
+    </div>
+          </div>
+      </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+            <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+          </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container-fluid">
+
+    <!-- Modal--> 
+    <div class="modal fade" id="mas" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">BENEFIT COSMETICS</h3>
+          
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid" style="height:70vh; ">
+              <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                <img src="mas.png"  alt="..." style="height:18rem;" class="center"> 
+               <p style="font-size:30px" class="text-center">BADgal Bang! Mascara - Black</p>
+               <h5 class=" text-center">$44.00</h5>
+
+                    
+              <p style="font-size:22px">DESCRIPTION</p>
+              <p class="modal-title">Function: Volumize</p>
+              <p class="modal-title">Benefits: Long-wearing</p>
+             
+             
+             
+
+              <p style="font-size:22px">INGREDIENTS</p>
+              <p class="modal-title">Product Claims: Aqua (Water), Paraffin, Cera Alba (Beeswax), Glyceryl Stearate, Butylene Glycol, Acrylates Copolymer, Euphorbia Cerifera (Candelilla) Wax, Copernicia Cerifera (Carnauba) Wax, Polybutene, Steareth-21, Vp/Eicosene Copolymer, Palmitic Acid, Stearic Acid.
+</p>
+
+             <p style="font-size:22px">Suggested Usage</p>
+              <p class="modal-title">-Wiggle the slimpact! brush from the base of the lashes to the tips.</p>
+              <p class="modal-title">-Repeat as desired to build BIGGER and BIGGER volume.</p>
+              
+             
+            
+       
+    </div>
+          </div>
+      </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+            <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+          </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="container-fluid">
+
+    <!-- Modal--> 
+    <div class="modal fade" id="nest" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">NEST</h3>
+          
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid" style="height:70vh; ">
+              <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                <img src="black.png"  alt="..." style="height:18rem;" class="center">  
+               <p style="font-size:30px" class="text-center">Black Tulip Eau De Parfum</p>
+               <h5 class=" text-center">$125.00</h5>
+
+                    
+              <p style="font-size:22px">DESCRIPTION</p>
+              <p class="modal-title">Fragrance Family: Warm & Spicy</p>
+              <p class="modal-title">Formulation: Spray</p>
+             
+             
+             
+
+              <p style="font-size:22px">INGREDIENTS</p>
+              <p class="modal-title">Product Claims: Fragrance Oil.
+</p>
+
+             <p style="font-size:22px">Suggested Usage</p>
+              <p class="modal-title">-Apply your chosen fragrance to your pulse points.</p>
+              <p class="modal-title">-The fragrance is intensified by the warmth of your own body.</p>
+              
+             
+            
+       
+    </div>
+          </div>
+      </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+            <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+          </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="container-fluid">
+
+    <!-- Modal--> 
+    <div class="modal fade" id="sc" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">SEPHORA COLLECTION</h3>
+          
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid" style="height:70vh; ">
+              <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                <img src="body.png"  alt="..." style="height:18rem;" class="center">  
+               <p style="font-size:30px" class="text-center">Body Polish • 30ml</p>
+               <h5 class=" text-center">$4.00</h5>
+
+                    
+              <p style="font-size:22px">DESCRIPTION</p>
+              <p class="modal-title">Formulation: Liquid</p>
+             
+             
+             
+             
+
+              <p style="font-size:22px">INGREDIENTS</p>
+              <p class="modal-title">Product Claims: AHAs, Oil-free, Paraben-free, Sulphate-free.
+</p>
+
+             <p style="font-size:22px">Suggested Usage</p>
+              <p class="modal-title">-Apply generously to body and massage briskly on wet or dry skin, then rinse abundantly.</p>
+            
+             
+            
+       
+    </div>
+          </div>
+      </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+            <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+          </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+
+    <!-- Modal--> 
+    <div class="modal fade" id="fbb" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">FENTY BEAUTY</h3>
+          
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid" style="height:70vh; ">
+              <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                <img src="fbru.png"  alt="..." style="height:18rem;" class="center">  
+               <p style="font-size:30px" class="text-center">Face & Body Kabuki Brush 160</p>
+               <h5 class=" text-center">$25.00</h5>
+
+                    
+              <p style="font-size:22px">DESCRIPTION</p>
+              <p class="modal-title">Function: Blush, Bronzer & Luminiser, Foundation, Highlighter, Powder</p>
+             <p class="modal-title">Product Type: Synthetic</p>
+             
+             
+             
+
+              <p style="font-size:22px">INGREDIENTS</p>
+              <p class="modal-title">Product Claims: AHAs, Oil-free, Paraben-free, Sulphate-free.
+</p>
+
+             <p style="font-size:22px">Suggested Usage</p>
+              <p class="modal-title">-For liquid formulas, pump product onto skin, then blend.</p>
+            <p class="modal-title">-For powder formulas, swirl brush over product, then blend onto skin.</p>
+             
+            
+       
+    </div>
+          </div>
+      </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+            <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+          </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="container-fluid">
+
+    <!-- Modal--> 
+    <div class="modal fade" id="fbc" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">FENTY BEAUTY</h3>
+          
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid" style="height:70vh; ">
+              <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                <img src="pink.png"  alt="..." style="height:18rem;" class="center">  
+               <p style="font-size:30px" class="text-center">Cheeks Out Freestyle Cream Blush</p>
+               <h5 class=" text-center">$33.00</h5>
+
+                    
+              <p style="font-size:22px">DESCRIPTION</p>
+              <p class="modal-title">Formulation: Cream</p>
+            
+             
+             
+             
+
+              <p style="font-size:22px">INGREDIENTS</p>
+              <p class="modal-title">Product Claims: AHAs, Oil-free, Paraben-free, Sulphate-free.
+</p>
+
+             <p style="font-size:22px">Suggested Usage</p>
+              <p class="modal-title">-Apply with fingertips or the Face Shaping Brush 125 for a healthy-looking flush on cheeks—and even lips! Layer as desired for a vibrant pop.</p>
+           
+             
+            
+       
+    </div>
+          </div>
+      </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+            <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+          </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container-fluid">
+
+    <!-- Modal--> 
+    <div class="modal fade" id="cocon" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">SEPHORA COLLECTION</h3>
+          
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid" style="height:70vh; ">
+              <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                <img src="sep.png"  alt="..." style="height:18rem;" class="center"> 
+               <p style="font-size:30px" class="text-center">Cleansing Face Wipes • 25 wipes</p>
+               <h5 class=" text-center">$7.00</h5>
+
+                    
+              <p style="font-size:22px">DESCRIPTION</p>
+              <p class="modal-title">Skin Type: Combination, Dry, Normal, Oily, Sensitive</p>
+            
+              <p class="modal-title">Skincare By Age: 20s, 30s, 40s, 50+, Under 20</p>
+             
+             
+
+              <p style="font-size:22px">INGREDIENTS</p>
+              <p class="modal-title">Coconut water cleansing wipes: Aqua (Water), Caprylic/Capric Triglyceride, Parfum (Fragrance), Phenoxyethanol, Glycerin, Benzyl Alcohol, Ethylhexylglycerin, Glyceryl Stearate, Lauryl Glucoside, Sodium Lauroyl Lactylate, Cocos Nucifera (Coconut) Fruit Juice, Cetearyl Alcohol, Sodium Stearoyl Lactylate, Sodium Hydroxide, Limonene.
+</p>
+
+             <p style="font-size:22px">Suggested Usage</p>
+              <p class="modal-title">-Gently run the microfiber wipe over the face and eyes. No need to rinse and close the pack well after each use.</p>
+           
+             
+            
+       
+    </div>
+          </div>
+      </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+            <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+          </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="container-fluid">
+
+    <!-- Modal--> 
+    <div class="modal fade" id="tarte" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">TARTE</h3>
+          
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid" style="height:70vh; ">
+              <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                <img src="tarte.png"  alt="..." style="height:20rem;" class="center"> 
+               <p style="font-size:30px" class="text-center">Shape Tape Contour Concealer</p>
+               <h5 class=" text-center">$40.00</h5>
+
+                    
+              <p style="font-size:22px">DESCRIPTION</p>
+              <p class="modal-title">Skin Type: Combination, Dry, Normal, Oily, Sensitive</p>
+            
+              <p class="modal-title">Finish: Matte, Radiant, Satin</p>
+             
+             
+
+              <p style="font-size:22px">INGREDIENTS</p>
+              <p class="modal-title">Coconut water cleansing wipes: Aqua (Water), Caprylic/Capric Triglyceride, Parfum (Fragrance), Phenoxyethanol, Glycerin, Benzyl Alcohol, Ethylhexylglycerin, Glyceryl Stearate.
+</p>
+
+             <p style="font-size:22px">Suggested Usage</p>
+              <p class="modal-title">-Apply concealer directly onto imperfections and blend using the larger, domed end of the sponge.</p>
+           
+             <p class="modal-title">-To best conceal dark circles, trace the concealer onto the undereye area in a triangle of light formation and blend.</p>
+            
+       
+    </div>
+          </div>
+      </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+            <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+          </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container-fluid">
+
+    <!-- Modal--> 
+    <div class="modal fade" id="high" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">SEPHORA COLLECTION</h3>
+          
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid" style="height:70vh; ">
+              <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                <img src="glitter.png"  alt="..." style="height:20rem;" class="center"> 
+               <p style="font-size:30px" class="text-center">Golden Hour Highlighter • 8g
+</p>
+               <h5 class=" text-center">$24.00</h5>
+
+                    
+              <p style="font-size:22px">DESCRIPTION</p>
+              <p class="modal-title">Formulation: Pressed Powder</p>
+            
+          
+             
+             
+
+              <p style="font-size:22px">INGREDIENTS</p>
+              <p class="modal-title">Product Claims: Fragrance-free, Oil-free, Paraben-free, Sulphate-free.
+
+             <p style="font-size:22px">Suggested Usage</p>
+              <p class="modal-title">-For a soft luminous glow, apply Golden Hour highlighters with a brush over cheekbones and bridge of nose. Wear alone or over blush and bronzer.</p>
+           
+             <p class="modal-title">-For more intense luminosity, apply Golden Hour highlighters with a sponge or fingertips.</p>
+            
+       
+    </div>
+          </div>
+      </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+            <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+          </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="container-fluid">
+
+    <!-- Modal--> 
+    <div class="modal fade" id="fms" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">SEPHORA COLLECTION</h3>
+          
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid" style="height:70vh; ">
+              <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                <img src="lyche.png"  alt="..." style="height:20rem;" class="center"> 
+               <p style="font-size:30px" class="text-center">Exfoliating Face Wipes
+</p>
+               <h5 class=" text-center">$24.00</h5>
+
+                    
+              <p style="font-size:22px">DESCRIPTION</p>
+              <p class="modal-title">Skin Type: Combination, Dry, Normal, Oily</p>
+            <p class="modal-title">Skin Concerns: Dullness, Uneven Skin Tone</p>
+          
+             <p class="modal-title">Skincare By Age: 20s, 30s, 40s, 50+, Under 20</p>
+             
+
+              <p style="font-size:22px">INGREDIENTS</p>
+              <p class="modal-title">Product Claims: Fragrance-free, Oil-free, Paraben-free, Sulphate-free.
+
+             <p style="font-size:22px">Suggested Usage</p>
+              <p class="modal-title">-Use the grainy side to delicately scrub the face with special attention to the T zone.</p>
+           
+             <p class="modal-title">-To cleanse and remove makeup, delicately run the smooth side of the microfiber wipe over the face. No need to rinse and close well after each use.</p>
+            
+       
+    </div>
+          </div>
+      </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+            <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+          </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="container-fluid">
+
+    <!-- Modal--> 
+    <div class="modal fade" id="kvd" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">KVD VEGAN BEAUTY</h3>
+          
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid" style="height:70vh; ">
+              <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                <img src="eyeliner.png"  alt="..." style="height:20rem;" class="center">  
+               <p style="font-size:30px" class="text-center">Tattoo Liner Liquid Eyeliner • 0.55mlipes
+</p>
+               <h5 class=" text-center">$30.00</h5>
+
+                    
+              <p style="font-size:22px">DESCRIPTION</p>
+              <p class="modal-title">Finish: Natural</p>
+            <p class="modal-title">Formulation: Liquid, Pen</p>
+          
+          
+             
+
+              <p style="font-size:22px">INGREDIENTS</p>
+              <p class="modal-title">Product Claims: Fragrance-free, Oil-free, Sulphate-free.
+
+             <p style="font-size:22px">Suggested Usage</p>
+              <p class="modal-title">-Shake before use to keep the formula flowing.</p>
+           
+             <p class="modal-title">-Still feeling dry? Wipe tip with a damp tissue to remove eyeshadow build-up. Be sure to store Tattoo Liner tip-down so the brush is always saturated.
+</p>
+            
+       
+    </div>
+          </div>
+      </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+            <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+          </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container-fluid">
+
+    <!-- Modal--> 
+    <div class="modal fade" id="oh" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">OLE HENRIKSEN</h3>
+          
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid" style="height:70vh; ">
+              <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                <img src="oleh.png"  alt="..." style="height:20rem;" class="center">  
+               <p style="font-size:30px" class="text-center">Truth Juice™ Daily Cleanser • 150ml
+</p>
+               <h5 class=" text-center">$38.00</h5>
+
+                    
+              <p style="font-size:22px">DESCRIPTION</p>
+              <p class="modal-title">Finish: Natural</p>
+            <p class="modal-title">Skin Type: Combination, Dry, Normal, Oily</p>
+          
+          
+             
+
+              <p style="font-size:22px">INGREDIENTS</p>
+              <p class="modal-title">Product Claims: AHAs, Fragrance-free, Paraben-free, Sulphate-free.
+
+             <p style="font-size:22px">Suggested Usage</p>
+              <p class="modal-title">-Lather. Rinse. No need to repeat.</p>
+           
+             <p class="modal-title">-For external use only. Use as directed.
+            
+       
+    </div>
+          </div>
+      </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+            <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+          </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container-fluid">
+
+    <!-- Modal--> 
+    <div class="modal fade" id="fw" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">SEPHORA COLLECTION</h3>
+          
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid" style="height:70vh; ">
+              <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                <img src="grep.png"  alt="..." style="height:20rem;" class="center">  
+               <p style="font-size:30px" class="text-center">Exfoliating Face Wipes
+</p>
+               <h5 class=" text-center">$7.00</h5>
+
+                    
+              <p style="font-size:22px">DESCRIPTION</p>
+              <p class="modal-title">Skin Concerns: Dullness, Uneven Skin Tone</p>
+            <p class="modal-title">Skin Type: Combination, Dry, Normal, Oily</p>
+          
+          
+             
+
+              <p style="font-size:22px">INGREDIENTS</p>
+              <p class="modal-title">Product Claims: AHAs, Anti-oxidants, Oil-free, Paraben-free, Sulphate-free, Vitamins
+
+             <p style="font-size:22px">Suggested Usage</p>
+              <p class="modal-title">-Use the grainy side to delicately scrub the face with special attention to the T zone.</p>
+           
+             <p class="modal-title">-To cleanse and remove makeup, delicately run the smooth side of the microfiber wipe over the face. No need to rinse and close well after each use.
+            
+       
+    </div>
+          </div>
+      </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+            <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+          </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container-fluid">
+
+    <!-- Modal--> 
+    <div class="modal fade" id="smoke" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">SEPHORA COLLECTION</h3>
+          
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid" style="height:70vh; ">
+              <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                <img src="smo.png"  alt="..." style="height:20rem;" class="center"> 
+               <p style="font-size:30px" class="text-center">Compact Smokey Eye Brush Set
+</p>
+               <h5 class=" text-center">$32.00</h5>
+
+                    
+              <p style="font-size:22px">DESCRIPTION</p>
+              <p class="modal-title">Function: Eyeshadow</p>
+            <p class="modal-title">Product Type: Synthetic</p>
+          
+          
+             
+
+              <p style="font-size:22px">INGREDIENTS</p>
+              <p class="modal-title">Product Claims: AHAs, Anti-oxidants, Oil-free, Paraben-free, Sulphate-free, Vitamins
+
+             <p style="font-size:22px">Suggested Usage</p>
+              <p class="modal-title">-A pencil in the same colour as the dark eyeshadow colour.</p>
+           
+             <p class="modal-title">- A dark eyeshadow.
+            
+       
+    </div>
+          </div>
+      </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+            <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+          </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<div class=" container-fluid pt-5" >
+    <div class="row">
+
+    
+      
+        
+      <!-- carosol -->
+      <div class="col-lg-12 col-12" >
+          <div class="container-fluid" style="height:600px;">  
+   <div id="carouselId" class="carousel slide carousel-fade" data-ride="carousel">
+     
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active"  data-interval="4000" style="height:600px;">
+        <img src="new.png" class="d-block w-100 animate__animated animate__bounceInDown" alt="sell books" style="height:600px;">
+        <!--<div class="carousel-caption d-none d-md-block text-black">
+          <h5 >Buy Shimmer</h5>
+          <p>Buy Products From Fenty Beauty</p>
+        </div>-->
+      </div>
+      <div class="carousel-item " data-interval="4000" style="height:600px;">
+        <img src="brush.jpg" class=" d-block w-100" alt="buy books" style="height:600px;" >
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="animate__animated animate__backInDown" style="color: black;">Buy Best Brushes</h1>
+          <p class="animate__animated animate__backInLeft" style="color: black;">Buy Morphe Brushes</p>
+        </div>
+      </div>
+      <div class="carousel-item"  data-interval="4000" style="height:600px;">
+        <img src="fenty.jpg" class="d-block w-100" alt="sell books" style="height:600px;">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="animate__animated animate__backInDown" >Buy Best Lipstick</h1>
+          <p class="animate__animated animate__backInLeft">Buy Products From Dior</p>
+        </div>
+      </div>
+      <div class="carousel-item"  data-interval="4000" style="height:600px;">
+        <img src="foun.jpg" class="d-block w-100" alt="Express Yourself" style="height:600px;">
+        <div class="carousel-caption d-none d-md-block">
+         <h1 class="animate__animated animate__backInDown" >Buy Best Foundation</h1>
+          <p class="animate__animated animate__backInLeft">Buy Products From Fenty Beauty </p>
+        </div>
+      </div>
+      <div class="carousel-item"  data-interval="4000" style="height:600px;">
+        <img src="highlighters.jpg" class="d-block w-100" alt="Express Yourself" style="height:600px;">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="animate__animated animate__backInDown" style="color: black;">Buy Best Highlighters</h1>
+          <p class="animate__animated animate__backInLeft" style="color: black;">Buy Products From NYX</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <ol class="carousel-indicators">
+      <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselId" data-slide-to="1"></li>
+      <li data-target="#carouselId" data-slide-to="2"></li>
+      <li data-target="#carouselId" data-slide-to="3"></li>
+      <li data-target="#carouselId" data-slide-to="4"></li>
+    </ol>
+
+    
+    <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  </div>
+          
+      </div>
+      
+     
+  </div>
+</div>
+
+
+<div>
+ 
+  <div class="container-fluid pt-4 d-none d-lg-block" >
+
+    <div class="row">
+
+    <div class="col-lg-12 col-4 back ">
+      <div class="row">
+        <div class="col-lg-1 " >
+          <div class="nbtn">
+  <button class=" btn butn text-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    New
+  </button>
+  
+</div>
+      </div>
+      <div class="col-lg-1 " >
+          <div class="wbtn">
+  <button class="btn butn text-white  " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Wellness
+  </button>
+  
+</div>
+      </div>
+      <div class="col-lg-1 " >
+          <div class="dropdown">
+  <button class="btn butn text-white  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Makeup
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Face</a>
+    <a class="dropdown-item" href="#">Lips</a>
+    <a class="dropdown-item" href="#">Eyes</a>
+    <a class="dropdown-item" href="#">Nails</a>
+  </div>
+</div>
+      </div>
+      <div class="col-lg-1 " >
+          <div class="dropdown">
+  <button class="btn butn text-white  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Skincare
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Cleanser</a>
+    <a class="dropdown-item" href="#">Masks</a>
+    <a class="dropdown-item" href="#">Moisturiser</a>
+     <a class="dropdown-item" href="#">Sun Care</a>
+  </div>
+</div>
+      </div>
+      <div class="col-lg-1 " >
+          <div class="dropdown">
+  <button class="btn butn text-white  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  Tools
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Brushes</a>
+    <a class="dropdown-item" href="#">Makeup Accessories</a>
+    <a class="dropdown-item" href="#">Hair Tools </a>
+     <a class="dropdown-item" href="#">Sopnges</a>
+  </div>
+</div>
+      </div>
+      <div class="col-lg-1 " >
+          <div class="dropdown">
+  <button class="btn butn text-white  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  Hair
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Shampoo</a>
+    <a class="dropdown-item" href="#">Conditioner</a>
+    <a class="dropdown-item" href="#">Stylings</a>
+     <a class="dropdown-item" href="#">Treatments</a>
+  </div>
+</div>
+      </div>
+      <div class="col-lg-1 " >
+          <div class="dropdown">
+  <button class="btn butn text-white  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Bath
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Shower</a>
+    <a class="dropdown-item" href="#">Grooming</a>
+    <a class="dropdown-item" href="#">Treatments</a>
+  </div>
+</div>
+      </div>
+      
+      <div class="col-lg-1 " >
+          <div class="dropdown">
+  <button class="btn butn text-white  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Fragrance
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Women</a>
+    <a class="dropdown-item" href="#">Men</a>
+    
+  </div>
+</div>
+      </div>
+      <div class="col-lg-1 " >
+          <div class="dropdown">
+  <button class="btn butn text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Brands
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Huda Beauty</a>
+    <a class="dropdown-item" href="#">NYX</a>
+    <a class="dropdown-item" href="#">Fenty Beauty</a>
+  </div>
+</div>
+      </div>
+      <div class="col-lg-1 " >
+          <div class="dropdown">
+  <button class="btn butn text-white  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Gifts
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">E-Gift Card</a>
+    <a class="dropdown-item" href="#">Gift Ideas</a>
+    
+  </div>
+</div>
+      </div>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<h1 class="text-center text-danger">THIS MONTH'S TOP PICKS</h1>
+
+<div>
+<div class="container-fluid pb-4 pt-4 ">
+  <div class="row">
+    <div class="col-lg-2">
+    </div>
+    <div class="col-lg-8 back">
+  <div class="row">
+        <div class="col-sm-12">
+            <div id="inam" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                         <div class="container">
+                            <div class="row">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-3"> 
+      <div class="col mb-4">
+              <div class="card shadow-lg bg-light" >
+                <img src="anes.png" class="card-img-top" alt="..." style="height:16rem;">
+                <div class="card-body">
+                  <h5 class="card-title">ANASTASIA BEVERLY HILLS</h5>
+                  <p class="card-text">Dipbrow Pomade</p>
+                  <h5 class="card-title">$33.00</h5>
+
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#ANASTASIA">View Details</a>
+                
+                  <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+                
+              </div>
+          </div>
+                 <div class="col mb-4">
+              <div class="card shadow-lg bg-light" >
+                <img src="cc.png" class="card-img-top" alt="..." style="height:16rem;">
+                <div class="card-body">
+                  <h5 class="card-title">IT COSMETICS</h5>
+                  <p class="card-text">Your Skin But Better CC+ Cream SPF 50 Mini</p>
+                  <h5 class="card-title">$25.00</h5>
+
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+
+                </div>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#cc">View Details</a>
+                
+                  <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+                
+              </div>
+          </div>
+           
+          <div class="col mb-4">
+              <div class="card shadow-lg bg-light" >
+                <img src="fenty lip.png" class="card-img-top" alt="..." style="height:16rem;">
+                <div class="card-body">
+                  <h5 class="card-title">FENTY BEAUTY</h5>
+                  <p class="card-text">Stunna Lip Paint Longwear Fluid Lip Color</p>
+                  <h5 class="card-title">$39.00</h5>
+
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#fb">View Details</a>
+                
+                  <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+                
+              </div>
+          </div>
+            </div>
+      </div>
+  </div>
+</div>
+
+    <div class="carousel-item">
+                         <div class="container">
+                            <div class="row">
+                              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-3">
+          <div class="col mb-4">
+              <div class="card shadow-lg bg-light" >
+                <img src="hoo.png" class="card-img-top" alt="..." style="height:16rem;">
+                <div class="card-body">
+                  <h5 class="card-title">BENEFIT COSMETICS</h5>
+                  <p class="card-text">Hoola Matte Bronzer</p>
+                  <h5 class="card-title">$54.00</h5>
+
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#hoo">View Details</a>
+                
+                  <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+                
+              </div>
+          </div>
+          <div class="col mb-4">
+              <div class="card shadow-lg bg-light" >
+                <img src="huda.png" class="card-img-top" alt="..." style="height:16rem;">
+                <div class="card-body">
+                  <h5 class="card-title">HUDA BEAUTY</h5>
+                  <p class="card-text">Power Bullet Matte Lipstick</p>
+                  <h5 class="card-title">$38.00</h5>
+
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+
+                </div>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#huda">View Details</a>
+                  <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+                
+              </div>
+          </div>
+          <div class="col mb-4">
+              <div class="card shadow-lg bg-light" >
+                <img src="mas.png" class="card-img-top" alt="..." style="height:16rem;">
+                <div class="card-body">
+                  <h5 class="card-title">BENEFIT COSMETICS</h5>
+                  <p class="card-text">BADgal Bang! Mascara - Black</p>
+                  <h5 class="card-title">$44.00</h5>
+
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#mas">View Details</a>
+                  <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>
+
+
+    </div>
+    <ol class="carousel-indicators">
+      <li data-target="#inam" data-slide-to="0" class="active"></li>
+      <li data-target="#inam" data-slide-to="1"></li>
+      
+      
+    </ol>
+    <a href="#inam" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#inam" class="carousel-control-next" data-slide="next">
+                    
+                    <span class="carousel-control-next-icon" ></span>
+                </a>
+                
+</div>
+</div>
+</div>
+</div>
+
+
+    <div class="col-lg-2">
+    </div>
+</div>
+</div>
+</div>
+
+<h1 class="text-center text-danger">Recommended for You</h1>
+
+<div class="container-fluid pb-4 pt-4 ">
+  <div class="row">
+    <div class="col-lg-2">
+    </div>
+    <div class="col-lg-8 back">
+  <div class="row">
+        <div class="col-sm-12">
+            <div id="nam" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                   
+
+    <div class="carousel-item active">
+                         <div class="container">
+                            <div class="row">
+                              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-3">
+          <div class="col mb-4">
+              <div class="card shadow-lg bg-light" >
+                <img src="black.png" class="card-img-top" alt="..." style="height:16rem;">
+                <div class="card-body">
+                  <h5 class="card-title">NEST</h5>
+                  <p class="card-text">Black Tulip Eau De Parfum</p>
+                  <h5 class="card-title">$125.00</h5>
+
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#nest">View Details</a>
+                  <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+                
+              </div>
+          </div>
+          <div class="col mb-4">
+              <div class="card shadow-lg bg-light" >
+                <img src="body.png" class="card-img-top" alt="..." style="height:16rem;">
+                <div class="card-body">
+                  <h5 class="card-title">SEPHORA COLLECTION</h5>
+                  <p class="card-text">Body Polish</p>
+                  <h5 class="card-title">$4.00</h5>
+
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+
+                </div>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#sc">View Details</a>
+                  <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+                
+              </div>
+          </div>
+          <div class="col mb-4">
+              <div class="card shadow-lg bg-light" >
+                <img src="fbru.png" class="card-img-top" alt="..." style="height:16rem;">
+                <div class="card-body">
+                  <h5 class="card-title">FENTY BEAUTY</h5>
+                  <p class="card-text">Face & Body Kabuki Brush 160</p>
+                  <h5 class="card-title">$25.00</h5>
+
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#fbb">View Details</a>
+                  <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+                
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>
+
+<div class="carousel-item">
+                         <div class="container">
+                            <div class="row">
+                              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-3">
+          <div class="col mb-4">
+             <div class="card shadow-lg bg-light" >
+                <img src="pink.png" class="card-img-top" alt="..." style="height:16rem;">
+                <div class="card-body">
+                  <h5 class="card-title">FENTY BEAUTY</h5>
+                  <p class="card-text">Cheeks Out Freestyle Cream Blush</p>
+                  <h5 class="card-title">$33.00</h5>
+
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#fbc">View Details</a>
+                  <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+                
+              </div>
+          </div>
+          <div class="col mb-4">
+              <div class="card shadow-lg bg-light" >
+                <img src="sep.png" class="card-img-top" alt="..." style="height:16rem;">
+                <div class="card-body">
+                  <h5 class="card-title">SEPHORA COLLECTION</h5>
+                  <p class="card-text">Cleansing Face Wipes</p>
+                  <h5 class="card-title">$7.00</h5>
+
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#cocon">View Details</a>
+                  <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+                
+              </div>
+          </div>
+          <div class="col mb-4">
+              <div class="card shadow-lg bg-light" >
+                <img src="tarte.png" class="card-img-top" alt="..." style="height:16rem;">
+                <div class="card-body">
+                  <h5 class="card-title">TARTE</h5>
+                  <p class="card-text">Shape Tape Contour Concealer</p>
+                  <h5 class="card-title">$40.00</h5>
+
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#tarte">View Details</a>
+                  <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+                
+              </div>
+          </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <ol class="carousel-indicators">
+      <li data-target="#nam" data-slide-to="0" class="active"></li>
+      <li data-target="#nam" data-slide-to="1"></li>
+      
+     
+      
+    </ol>
+    <a href="#nam" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#nam" class="carousel-control-next" data-slide="next">
+                    
+                    <span class="carousel-control-next-icon" ></span>
+                </a>
+                
+</div>
+</div>
+</div>
+</div>
+
+
+    <div class="col-lg-2">
+    </div>
+</div>
+</div>
+
+<h1 class="text-center text-danger">Your Next Obsession</h1>
+
+<div class="container-fluid pb-4 pt-4 ">
+  <div class="row">
+    <div class="col-lg-2">
+    </div>
+    <div class="col-lg-8 back ">
+  <div class="row">
+        <div class="col-sm-12">
+            <div id="caro3" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                         <div class="container">
+                            <div class="row">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-3"> 
+      <div class="col mb-4">
+              <div class="card shadow-lg bg-light" >
+                <img src="glitter.png" class="card-img-top" alt="..." style="height:16rem;">
+                <div class="card-body">
+                  <h5 class="card-title">SEPHORA COLLECTION</h5>
+                  <p class="card-text">Golden Hour Highlighte</p>
+                  <h5 class="card-title">$24.00</h5>
+
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#high">View Details</a>
+                  <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+                
+              </div>
+          </div>
+                 <div class="col mb-4">
+              <div class="card shadow-lg bg-light" >
+                <img src="lyche.png" class="card-img-top" alt="..." style="height:16rem;">
+                <div class="card-body">
+                  <h5 class="card-title">SEPHORA COLLECTION</h5>
+                  <p class="card-text">Face Mask Set</p>
+                  <h5 class="card-title">$8.00</h5>
+
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+
+                </div>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#fms">View Details</a>
+                  <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+                
+              </div>
+          </div>
+             <div class="col mb-4">
+              <div class="card shadow-lg bg-light" >
+                <img src="eyeliner.png" class="card-img-top" alt="..." style="height:16rem;"> 
+                <div class="card-body">
+                  <h5 class="card-title">KVD VEGAN BEAUTY</h5>
+                  <p class="card-text">Tattoo Liner Liquid Eyeliner</p>
+                  <h5 class="card-title">$30.00</h5>
+
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#kvd">View Details</a>
+                  <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+                
+              </div>
+          </div>
+       
+            </div>
+      </div>
+  </div>
+</div>
+
+ 
+<div class="carousel-item">
+                         <div class="container">
+                            <div class="row">
+                              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-3">
+          <div class="col mb-4">
+             <div class="card shadow-lg bg-light" >
+                <img src="oleh.png" class="card-img-top" alt="..." style="height:16rem;">
+                <div class="card-body">
+                  <h5 class="card-title">OLE HENRIKSEN</h5>
+                  <p class="card-text">Truth Juice™ Daily Cleanser</p>
+                  <h5 class="card-title">$38.00</h5>
+
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#oh">View Details</a>
+                  <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+                
+              </div>
+          </div>
+          <div class="col mb-4">
+              <div class="card shadow-lg bg-light" >
+                <img src="grep.png" class="card-img-top" alt="..." style="height:16rem;">
+                <div class="card-body">
+                  <h5 class="card-title">SEPHORA COLLECTION</h5>
+                  <p class="card-text">Cleansing Face Wipes</p>
+                  <h5 class="card-title">$7.00</h5>
+
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#fw">View Details</a>
+                  <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+              </div>
+          </div>
+          <div class="col mb-4">
+              <div class="card shadow-lg bg-light" >
+                <img src="smo.png" class="card-img-top" alt="..." style="height:16rem;">
+                <div class="card-body">
+                  <h5 class="card-title">SEPHORA COLLECTION</h5>
+                  <p class="card-text">Compact Smokey Eye Brush Set
+
+</p>
+                  <h5 class="card-title">$35.00</h5>
+
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+
+                </div>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#smoke">View Details</a>
+                  <a href="test.html" class="btn btn-danger" role="button">Add To Bag</a>
+                
+              </div>
+          </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <ol class="carousel-indicators">
+      <li data-target="#caro3" data-slide-to="0" class="active"></li>
+      <li data-target="#caro3" data-slide-to="1"></li>
+      
+      
+    </ol>
+    <a href="#caro3" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#caro3" class="carousel-control-next" data-slide="next">
+                    
+                    <span class="carousel-control-next-icon" ></span>
+                </a>
+                
+</div>
+</div>
+</div>
+</div>
+
+
+    <div class="col-lg-2">
+    </div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid pb-4 ">
+ 
+  <div class="row">
+
+    <div class="col-lg-12">
+      <div class="row">
+        <div class="col-lg-6 col-12" >
+          <h2 class="text-dark">EARN REWARDS AS A BEAUTY PASS MEMBER</h2>
+          <hr>
+          <p class="text">You can earn rewards by having special Beauty Pass.</p>
+          <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Learn More</button>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="row">
+            <div class="col-lg-12 shadow-lg bg-light col-6 ">
+              <blockquote class="blockquote text-right m-4">
+                <p class="mb-0">Online service is the BEST! I ordered a few things from there and they arrived within a day! Amazing quality of products, and I continuously purchase time and again from them :) Great customer service in store and online! Highly recommend! </p>
+                <footer class="blockquote-footer">Ms <cite title="Source Title">Sarah</cite></footer>
+              </blockquote>
+            </div>
+            <div class="col-lg-12 shadow-lg bg-light col-6 ">
+              <blockquote class="blockquote text-right m-4">
+                <p class="mb-0">I contacted Mecca to find out if they stocked one of my favourite skincare brands VéLDERE, their customer service team replied to me very quickly and were very polite, although They didn’t have the products I was after i purchased a few other products from their site and had a very pleasantly experience from purchase to delivery. Will definitely continue using their online store especially now during this pandemic.</p>
+                <footer class="blockquote-footer">Ms <cite title="Source Title">Flora</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="page-footer font-small text-white pt-4 navcl">
+
+ 
+  <div class="container-fluid text-center text-md-left">
+
+    
+    <div class="row navcl">
+
+   
+      <div class="col-lg-6 mt-md-0 mt-3 ">
+
+        <h5 class="text-white m-2">Just Beauty</h5>
+        <p class="text-white m-2">-Buy top brand makeup here.</p>
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-white m-2">Call Us:</a>
+            <a href="#!">+011171044</a>
+          </li>
+          <li>
+            <a class="text-white m-2">Email:</a>
+            <a href="#!">justBeauty@gmail.com</a>
+          </li>
+          
+        </ul>
+
+      </div>
+   
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      
+      <div class="col-lg-6 mt-md-0 mt-3 navcl">
+        <div class="row"> 
+      <div class="col-lg-4 mb-md-0 mb-3">
+
+        <h5 class="text-white m-2">Customer Care</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!"class="m-2">Order Enquiry</a>
+          </li>
+          <li>
+            <a href="#!"class="m-2">Delivery</a>
+          </li>
+          <li>
+            <a href="#!"class="m-2">FAQ</a>
+          </li>
+          <li>
+            <a href="#!"class="m-2">Book Beauty Services</a>
+          </li>
+        </ul>
+
+      </div>
+      
+
+      <div class="col-lg-4 mb-md-0 mb-3">
+
+      
+        <h5 class="text-black m-2">About Us</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class=" m-2">About Just Beauty</a>
+          </li>
+          <li>
+            <a href="#!"class="m-2">Student Discount</a>
+          </li>
+          <li>
+            <a href="#!"class="m-2">Privacy Policy</a>
+          </li>
+          
+        </ul>
+
+      </div>
+      <div class="col-lg-4 mb-md-0 mb-3">
+
+        
+        <h5 class="text-black m-2">Connect With Us</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!"class="m-2" ><i class="fa fa-apple" style="font-size:36px"></i></a>
+          </li>
+          <li>
+            <a href="#!"class="m-2"><i class="fa fa-facebook-official" style="font-size:36px"></i></a>
+          </li>
+          <li>
+            <a href="#!"class="m-2"><i class="fa fa-twitter" style="font-size:36px"></i></a>
+          </li>
+          <li>
+            <a href="#!"class="m-2"><i class="fa fa-instagram" style="font-size:36px"></i></a>
+          </li>
+          
+        </ul>
+
+      </div>
+    
+
+  </div>
+  
+ </div>
+
+    </div>
+   
+  <div class="footer-copyright text-center py-3 text-white">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> Bootstrap.com</a>
+  </div>
+</div>
+ 
+</footer>
+
+
+
+
+
+
+
+
+        <script type="text/javascript" src="style.js">
+            
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+</html>
